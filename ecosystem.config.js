@@ -13,7 +13,7 @@ module.exports = {
       ref: 'origin/main',
       repo: 'https://github.com/seemrcola/fastify-server-template.git',
       path: '/var/www/recorder',
-      'post-deploy': 'which node',
+      'post-deploy': "exec bash \-l -c 'npm i && pm2 startOrReload ecosystem.config.js --env production'",
     },
   },
 }
