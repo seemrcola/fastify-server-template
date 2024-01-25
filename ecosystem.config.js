@@ -9,7 +9,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: ['101.34.87.59'], // 这里改为你的服务器 IP 数组
+      host: ['101.34.87.59'],// IP 数组
       ref: 'origin/main',
       repo: 'git@github.com:seemrcola/fastify-server-template.git',
       path: '/var/www/recorder',
